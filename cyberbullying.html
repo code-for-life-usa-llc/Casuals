@@ -1,0 +1,235 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-image: url('data:image/jpeg;base64,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');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            p{
+                color: white;
+                font-size: 30px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            h1{
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                margin-top: 35px;
+            }
+            .topic{
+                display: flex;
+                justify-content: center;
+            }
+            .keys{
+                display: flex;
+                justify-content: center;
+            }
+            #nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+.link {
+  float: left;
+}
+.link a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.link a:hover {
+  background-color: #d802aa;
+}
+.nine{
+    color: white;
+    font-size: 25px;
+}
+hr{
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  color: white;
+  height: 30px;
+}
+.pic{
+  display: flex;
+  justify-content: center;
+}
+.alt {
+  display: flex;
+  justify-content: center;
+}
+        </style>
+    </head>
+    <body>
+      <ul id="nav">
+        <li class="link"><img src="https://www.wahooschools.org/vimages/shared/vnews/stories/57f2873262b54/1_Screen%20Shot%202016-10-03%20at%2011.27.50%20AM.png" width="65"></li>
+        <li class="link"><a class="active" href="#home">Home</a></li>
+        <li class="link"><a href="#news">News</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+          <li class="link"><a href="#about">About</a></li>
+      </ul>
+        <h1 class="topic">Stop Cyberbulling</h1>
+      <hr>
+        <p class="keys">Cyberbulling is somthing that happens online, such as on Social Media, messages , and sometimes on games.
+        This means victims can be targeted 24/7 even while they at home, thinking they would be safe.<br><br>
+        Nearly 42% of kids have been bullied online and almost one in four have had it happen more than once.
+        Among this percentage, being ignored and disrespected were the most common forms of cyberbullying.<br><br>
+        Nine out of 10 middle school students have had their feelings hurt online.
+        Kids who are cyberbullied can struggle to concentrate in school, which can affect how well they do there. <br><br>
+        Cyberbullying that is severe, long-lasting, or happens a lot can cause anxiety, depression, and other stress-related disorders in victims and bullies.
+        </p>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img width="250" height="300" src="https://kidshelpline.com.au/sites/default/files/thumbnail-T-CB_1.png"  class="d-block w-10" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Getting hated on.</h5>
+        <p>This photo shows a young feamle getting hate for a post she mad on her computer.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img width="225" height="300" src="https://www.parents.com/thmb/tkzQwjCMC7W2BzGR5rSUVDU8FU0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-are-the-effects-of-cyberbullying-460558-5b4a9d776bee4efea38cdfa9158a2ded.png"  class="d-block w-10" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>5 Reasons Why!</h5>
+        <p>This image shoes what effects happend when anybody gets cyberbullied such as;anger, isolation, depression, illness, and humiliation.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img width="225" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1adWv4FXIc9_i_CCknuzihl3QLITwZ2e0SQ&s"  class="d-block w-70" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>More Than one App.</h5>
+        <p>This image shows how anyone can get cyberbullied on more than one app, cyberbulling can happen on any app, and it can make that person unstall that one app or multiple..</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br><br><br>
+<ul class="nine">
+  <li>Social Media is the #1 Cyberbully Platform.</li>
+  <li>Nearly 25% of Students Admit to Mean Behavior</li>
+  <li>Girls Suffer from Cyberbullying Most Often.</li>
+  <li>Educate your children about bullying.</li>
+  <li> For LGBTQ+ Students, Rates Increase Over 50% </li>
+  <li>Cyberbullying Puts Youth at Higher Risk of Suicide</li>
+  <li>Parents, Teachers, Administrators, and Youth Can Help Stop Cyberbullying</li>
+  <li>More than One Third of All Students Are Cyberbullied</li>
+</ul> 
+<br><br><br> 
+<img src="https://canyoncreekbh.com/wp-content/uploads/2024/06/cyberbullying.jpg" height="400" width="50%"><img src="https://4rbh.org/wp-content/uploads/2018/11/Cyber-Bullying640.jpg" width="50%" height="400">
+<p>
+ We should stop cyberbullying because it really hurts people and can make them feel super alone.
+ No one deserves to be made fun of just for being themselves. Sometimes people cry or even stop going to school because of mean messages online.
+ Just because it's behind a screen doesn't mean it's not real. We all need to be kinder and stand up for each other, not tear each other down.<br>
+</p>
+<p>
+  Cyberbullying significantly impacts mental health, often leading to depression, anxiety, and even suicidal thoughts, especially among adolescents. Victims may experience low self-esteem, feelings of isolation, and changes in sleep and eating patterns. The unique features of online interactions, like the potential for anonymity and the speed of information sharing, can exacerbate these negative effects.<br>
+</p>
+<div class="alt">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ctd75a7_Yw?si=kwdwPRc3PkHyDQ5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/Jwu_7IqWh8Y?si=YX0TUne-mjNWVWCX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <p>
+</div>
+  <p >
+  How To Protect Yourself.
+</p>
+<ul class="nine">
+  <li>Dont respond to mean messages.</li>
+  <li>Block and report bullies</li>
+  <li>Keep evidence such as screenshots.</li>
+ <li> Use privacy settings.</li>
+</ul> 
+<div class="alt">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iFlrCuSyhvU?si=n-o0sdn5pfwru98L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/ynTuA_tlZDE?si=rYHSk4rCkAB9DTP9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h1>
+  Here are some quotes about cyberbulling.<br>
+</h1>
+<p>
+  "Sitting behind a computer gives people a sense of anonymity, but everyone needs to realize that words-even the ones they write online- have a strong power to hurt people."
+ <br>"Always be a first-rate version of yourself, instead of a second-rate version of somebody else."
+<div class="pic">
+ <img src="https://static.vecteezy.com/system/resources/previews/002/693/127/non_2x/cyberbullying-word-concepts-banner-harassing-people-through-internet-cyber-humiliation-infographics-with-linear-icons-on-blue-background-isolated-typography-outline-rgb-color-illustration-vector.jpg" width="70%">
+</div>
+ <p>
+  Cyberbulling is when someone uses the internet or thier phones to hurt, embarrass or hurt another person.
+   It can be really mean comments, spreading lies, or even pretending to be someone else to make them look bad. 
+   This kind of bulling can mess with someones mental health because it can make that person feel sad, or even anxious, or that can make them feel like there not good enoguh.
+    Sometimes when a person get cyberbullied also deal with problems at home like domestic abuse, and that just makes everything even worse.
+     When youre already going through stuff at home, and then people are mean online too, it can feel like theres no safe place left.
+<div class="alt">
+     <img src="https://kidshelpline.com.au/sites/default/files/bdl_image/OGAIBB_TEEN_THUMBNAIL_0_0.png" width="40%" height="315">
+<br>
+<iframe width="40%" height="315" src="https://www.youtube.com/embed/c1WBzMLgixM?si=Q05UhCwq9mssQdMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+</div>
+     <h1>
+  If you or someone you know is being bullied, there are things you can do to keep yourself and others safe from bullying.
+What Kids Can Do
+What Teens Can Do
+What Adults Can Do
+If you or someone you know is involved in cyberbullying, it is important to document and report the behavior.
+If you have done everything you can to resolve the situation and nothing has worked, or someone is in immediate danger, there are ways to get help.
+<h1>
+<section id="help">
+    <h2>How Can You Help?</h2>
+    <ul>
+      <li>Speak up if you see bullying happening.</li>
+      <li>Support victims and report abuse.</li>
+      <li>Use positive language online.</li>
+      <li>Educate others about digital kindness.</li>
+    </ul>
+    <a href="https://www.stopbullying.gov/" class="cta" target="_blank">Learn More</a>
+    </section>
+ <section id="what">
+    <h2>What is Cyberbullying?</h2>
+    <p>Cyberbullying is the use of digital technology to harass, threaten, or humiliate someone. It can happen on social media, messaging apps, gaming platforms, or any online space.</p>
+  </section>
+  <section id="effects">
+    <h2>Effects of Cyberbullying</h2>
+    <p>Cyberbullying can lead to anxiety, depression, and in severe cases, suicidal thoughts. It's a serious issue that affects children, teens, and even adults across the globe.</p>
+  </section>
+</section>
+<footer>
+    <p>&copy; 2025 Stop Cyberbullying | All rights reserved</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

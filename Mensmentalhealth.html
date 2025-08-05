@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link ref="stylesheet" href="health.css">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+        
+        <style>
+          h2{
+            color: teal;
+          }
+          h1{
+            color: teal;
+          }
+          #stereo{
+            font-size: 30px;
+          }
+          #s{
+            font-size: 30px;
+          }
+          #solution{
+            font-size: 30px;
+          }
+          
+          body{
+            background-color: blanchedalmond;
+          }
+          #if{
+            display: flex;
+            justify-content: center;
+          }
+
+          #unrealistic{
+            font-size: 32px;
+            color: teal;
+          }
+          .neg{
+            font-size: 26px;
+          }
+          #neglect{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+          }
+          li{
+            font-size: 36px;
+          }
+          .list{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          }
+          #vid{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          }
+          h2{
+            display: flex;
+            justify-content: center;
+          }
+          p{
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+          }
+            .carousel slide carousel-fade{
+                display: flex;
+                justify-content: center;
+            }
+            #un{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a.active {
+  float: left;
+}
+
+li a.active {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #111;
+}
+            #men {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  } 
+            
+        </style>
+    </head>
+    <body>
+       
+        <ul id="un">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a class="active" href="#news">News</a></li>
+    <li><a class="active" href="#contact">Contact</a></li>
+    <li><a  class="active" href="#about">About</a></li>
+        </ul>
+        <button onclick="document.body.style.backgroundColor ='blanchedalmond'; document.body.style.color ='black';  ">Light mode</button>
+        <button onclick="document.body.style.backgroundColor ='black'; document.body.style.color ='white';  ">Dark mode</button>
+        <div  id="men">
+        <h1><b>Men's Mental Health</b></h1>
+        </div>
+        <br>
+
+        <div align="center">
+        <div style="width: 600px;" id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner" >
+    <div class="carousel-item active" >
+      <img src="https://jbws.org/wp-content/uploads/2022/06/Mens-Mental-Health-Awareness.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://rosshightimes.com/wp-content/uploads/2022/12/537BF08C-A433-43FC-A2D5-EDFBF7D1C915.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="VOICES_DebunkingMythsPerpetuatedByToxicMasculinity_AymenSherwani-1160x773-1.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h2>Why is men's mental health important?</h2>
+<br>
+<p id="s"><b>Men's mental health is important because men deal with mental problems as well. A lot of times society neglects their health which cause themselves to dismiss it leading to anger issues, drug abuse, and even domestic abuse and other unhealthy methods of coping which can be detrimental to their health and others.</b></p>
+<br>
+<div id="vid" >
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4nWcEtUV4do?si=3CsIQ-KKgwufUgux" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul>
+  <li><b>Explosive anger issues</b></li>
+  <li><b>Self hate</b></li>
+  <li><b>Self dissmisal</b></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+<h2>Why are the mental health of men neglected?</h2>
+<p id="stereo">The stereotype is that men are supposed to be strong and insensitive and bear the weight of everything on their back, when the truth is that no real human can do this.</p>
+<br>
+<p id="unrealistic"><b>These unrealistic standards can cause many things.</b></p>
+<div id="neglect">
+  <ul>
+    <li>Neglection</li>
+    <li>Dismission</li>
+    <li>Manipultion</li>
+  </ul>
+  <ul>
+  
+  </ul>
+  </div>
+  <br>
+  <br>
+  <div id="if">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QU1KNdD9Gig?si=RaALFyU-TNUqbDqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <br>
+  <br>
+  <h2>Solutions</h2>
+  <p id="solution">While men's mental health as a whole cannot be directly stopped or ended, people can still do a lot to help. One of these things is to stop neglecting/dismissing them when they open up. Due to the stereotype that men are supposed to "be men", they almost never talk about their feelings so when they do, it's important to take it seriously. You don't have to comfort them or anything but at least hear them out. Venting through words is better than venting through things like anger or violence and can stop outbursts. In addition stop the "men must be men"stereotype, it traps them in a box and often times makes them scared to be themselves or do certain actions. They are men regardless of what they do so stop pushing this stereotype or using it to manipulate them. </p>
+  <h6>By Micah</h6>
+  <h3><a href="https://adaa.org/find-help/by-demographics/mens-mental-health">Here is a website that provides more information.</a></h3>
+
+
+    </body>
+</html> 
