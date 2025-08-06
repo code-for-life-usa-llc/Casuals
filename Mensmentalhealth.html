@@ -70,7 +70,7 @@
                 display: flex;
                 justify-content: center;
             }
-            #un{
+           .nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -78,11 +78,11 @@
   background-color: #333;
 }
 
-li a.active {
+.link {
   float: left;
 }
 
-li a.active {
+.link a {
   display: block;
   color: white;
   text-align: center;
@@ -90,24 +90,20 @@ li a.active {
   text-decoration: none;
 }
 
-li a.active {
+.link a:hover {
   background-color: #111;
 }
-            #men {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-  } 
             
         </style>
     </head>
     <body>
        
-        <ul id="un">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a class="active" href="#news">News</a></li>
-    <li><a class="active" href="#contact">Contact</a></li>
-    <li><a  class="active" href="#about">About</a></li>
+        <ul class="nav">
+    <li class="link"><a class="active" href="Homepage.html">Home</a></li>
+  <li class="link"><a href="cyberbullying.html">CyberBullying</a></li>
+  <li class="link"><a href="whateveriwant.html">Domestic Abuse</a></li>
+  <li class="link"><a href="Mensmentalhealth.html">Men's Mental health</a></li>
+  <li class="link"><a href="Aboutus.html">About us</a></li>
         </ul>
         <button onclick="document.body.style.backgroundColor ='blanchedalmond'; document.body.style.color ='black';  ">Light mode</button>
         <button onclick="document.body.style.backgroundColor ='black'; document.body.style.color ='white';  ">Dark mode</button>
